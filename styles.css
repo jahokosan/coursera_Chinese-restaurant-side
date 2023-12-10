@@ -2,4 +2,33 @@ body {
     font-size: 16px;
     color: #fff;
     background-color: #61122F;
+    font-family:'Oxygen', sans-serif;
+}
+/* Header */
+#navbarcolor{
+    background-color: #f6b319;
+    border-radius: 0;
+    border: 0;
+}
+
+#divkoshercertified{
+    position: relative;
+    width: 100px;
+}
+
+#koshercertified{
+    position: absolute;
+    top: 40px;
+    left: 150px;
+    text-transform: uppercase;
+    margin-top: 5px;
+}
+
+#restaurantname{
+    font-family: 'Lora', serif;
+    color: #557c3e;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #222;
 }
