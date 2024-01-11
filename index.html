@@ -4,77 +4,78 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>La Vang Chinese restaurent</title>
+<!-- eigene styles.css erst NACH der bootstrap.css einbauen, damit mein code bei gleicher Spezifität überhand behält   -->
     <link rel="stylesheet" href="bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
+<!-- Import der Schriftarten und Icons  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
   </head>
   <body>
-    <header>
-      <!-- Navbar Grundgerüst -->
-      <nav id="navbarcolor"class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-        <!-- Navbar Brand -->
-          <a class="navbar-brand" href="index.html">
-            <div id="divkoshercertified">
-              <img src="images\restaurant-logo_large.png" alt="Logo" width="150px" height="150px" class="d-inline-block align-text-top">
-              <span id="restaurantname" class="d-inline-block align-text-top">
-              La Vang Chinese Bistro
-              </span>
-              <div id="koshercertified">
-                <img src="images/star-k-logo.png" alt="Kosher certification">
-                <span>Kosher Certified</span>
-              </div>
-            </div>
-          </a>
 
-          <!-- Button für die Smartphone Sicht -->
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<!-- Navbar Grundgerüst; Hier die Farbe der Navbar festlegen -->
+      <nav id="navbarcolor" class="navbar navbar-expand-md py-1">
+        <div class="container-fluid">
+<!-- Navbar Brand -->
+          <a class="navbar-brand" href="index.html">
+              <div alt="Logo image" id="logoimg" class=" float-start d-none d-md-block">
+              </div>
+              <h1 id="restaurantname" class="navbar-brand pb-0">
+              La Vang Chinese Bistro
+              </h1>
+        
+              <p id="koshercertified">
+                <img src="images/star-k-logo.png" alt="Kosher certification">
+                <span class="navbar-text">Kosher Certified</span>
+              </p>
+          </a>
+<!-- Button für die Navbar ab MD-Size -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nimmalledatenvonHIER" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <!-- Der nächste Div fasst alles zusammen, damit beim navbar-collapse alles verschwindet  -->
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+<!-- Inhalte der Navbar, die bei MD-Size in den Toggler kommen  -->
+          <div class="collapse navbar-collapse justify-content-end" id="nimmalledatenvonHIER">
+            <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <!-- Damit der Icon über dem Text zentriert ist, aber nur bei größer MD-Size -->
+                <a class="nav-link active d-md-flex flex-column align-items-center" aria-current="page" href="#">
+                <i class="fa-solid fa-utensils fs-3 lh-base"></i>
+                 Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
+                <a class="nav-link active d-md-flex flex-column align-items-center" href="#">
+                <i class="bi bi-info-circle fs-3"></i>
+              Features
                 </a>
-                <ul class="dropdown-menu">
-                 <li><a class="dropdown-item" href="#">Action</a></li>
-                 <li><a class="dropdown-item" href="#">Another action</a></li>
-                 <li><hr class="dropdown-divider"></li>
-                 <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                <a class="nav-link active d-md-flex flex-column align-items-center" href="#">
+                <i class="bi bi-award fs-3"></i>
+                 Awards</a>
+              </li>
+              <li id="phone" class="d-none d-sm-block pt-2">
+                <a href="tel:410-602-5008">
+                  <span class="fs-3">410-602-5008</span>
+                </a>
+                <div class="text-end lh-1">* We Deliver</div>
               </li>
             </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
           </div>
         </div>
       </nav>
-    </header>
+
 
     <main>
-
       <h1>Hello, world!</h1>
 
     </main>
-
+  
     <footer>
 
     </footer>
@@ -83,5 +84,7 @@
 
     <!-- Bootstrap JS -->
     <script src="bootstrap.bundle.min.js"></script>
+    <!--Font awesome -->
+    <script src="https://kit.fontawesome.com/924dc8dadc.js" crossorigin="anonymous"></script>
   </body>
 </html>
