@@ -39,7 +39,7 @@ body {
     }
 }
 
-#restaurantname{
+.navbar-brand h1{
     font-family: 'Lora', serif;
     color: #557c3e;
     font-size: 1.5rem;
@@ -80,3 +80,13 @@ a[href^="tel:"] {
 .navbar-toggler{
     border: 1px solid #951c49
 }
+
+/*applies to sm and xs devices (e.g. phones in landscape mode less than 768px) */
+@media (max-width: 767.98px){
+    .navbar-brand h1{
+        font-size: 5vw;
+    }
+    #koshercertified{
+        font-size: .6em;
+    }
+    }
