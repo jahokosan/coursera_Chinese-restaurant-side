@@ -5,11 +5,7 @@ body {
 }
 /* Header */
 
-.navbar-brand{
-    @media (min-width: 768px) {
-        width: 200px
-    } 
-}
+
 #navbarcolor{
     background-color: #f6b319;
     width: 100%
