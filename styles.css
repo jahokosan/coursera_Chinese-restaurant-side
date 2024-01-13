@@ -26,9 +26,6 @@ body {
 
 }
 
-#koshercertified{
-    width: 200px;
-}
 #nimmalledatenvonHIER{
     @media (min-width: 768px) and (max-width: 892px) {
         margin-top: 30px !important;
@@ -80,9 +77,23 @@ a[href^="tel:"] {
 /*applies to sm and xs devices (e.g. phones in landscape mode less than 768px) */
 @media (max-width: 767.98px){
     .navbar-brand h1{
-        font-size: 5vw;
+        font-size: 5vw; /* 5% of the viewport = font-size */
     }
     #koshercertified{
-        font-size: .6em;
+        font-size: 3vw;
     }
     }
+
+/* MD divices only  */
+@media (min-width: 768px) and (max-width: 991.98px){
+
+}
+
+/* Large devices only  */
+@media (min-width: 992px) and (max-width: 1199.98px){
+
+}
+/* XL and XXL */
+@media (min-width: 1200px){
+
+}
