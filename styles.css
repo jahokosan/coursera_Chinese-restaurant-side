@@ -74,6 +74,58 @@ a[href^="tel:"] {
     border: 1px solid #951c49
 }
 
+/* Main content all sizes */
+
+#jumbotron1{
+    box-shadow: 0 0 50px #3f0c1f;
+    border: 2px solid #3f0c1f;
+}
+
+#menu-tile, #specials-tile, #map-tile{
+    height: 250px;
+    width: 100%;
+    margin-bottom: 15px;
+    position: relative;
+    border: 2px solid #3f0c1f;
+    overflow: hidden;
+}
+
+#menu-tile:hover, #specials-tile:hover, #map-tile:hover {
+    box-shadow: 0 1px 5px 1px #cccccc;
+  }
+
+  #menu-tile {
+    background: url(images/menu-tile.jpg) no-repeat;
+    background-position: center;
+  }
+
+  #specials-tile {
+    background: url(images/specials-tile.jpg) no-repeat;
+    background-position: center;
+  }
+
+  #menu-tile span, #specials-tile span, #map-tile span {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 1.6em;
+    text-transform: uppercase;
+    background-color: #000;
+    color: #fff;
+    opacity: .8;
+  }
+/* END Main content all sizes */
+
+/*applies to xs devices (e.g. phones in landscape mode less than 768px) */
+@media (max-width: 575.98px){
+    #menu-tile, #specials-tile{
+        max-width: 360px;
+        margin: 0 auto 15px;
+    }
+}
+
 /*applies to sm and xs devices (e.g. phones in landscape mode less than 768px) */
 @media (max-width: 767.98px){
     .navbar-brand h1{
@@ -82,18 +134,31 @@ a[href^="tel:"] {
     #koshercertified{
         font-size: 3vw;
     }
+
     }
 
 /* MD divices only  */
 @media (min-width: 768px) and (max-width: 991.98px){
+    #jumbotron1{
+        background: url(images/jumbotron_768.jpg) no-repeat;
+        height: 432px;
 
+}
 }
 
 /* Large devices only  */
 @media (min-width: 992px) and (max-width: 1199.98px){
-
+    #jumbotron1{
+        background: url(images/jumbotron_992.jpg) no-repeat;
+        height: 558px;
 }
+}
+
 /* XL and XXL */
 @media (min-width: 1200px){
-
+    #jumbotron1{
+        background: url(images/jumbotron_1200.jpg) no-repeat;
+        height: 675px;
+        max-width: 1140px;
+    }
 }
